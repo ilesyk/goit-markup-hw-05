@@ -395,6 +395,8 @@ color: var(--slate);
 .portfolio-description {
     position: absolute;
     top: 0;
+    left: 0;
+    overflow-y: auto;
     width: 100%;
     height: 100%;
     padding: 40px 32px;
@@ -436,7 +438,7 @@ color: var(--slate);
     transition: opacity var(--transition), visibility var(--transition);
 }
 .modal {
-    width: 408px;
+    max-width: 408px;
 min-height: 576px;
 background: var(--dairy);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -444,7 +446,7 @@ border-radius: 4px;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%) scale(1);
+transform: translate(-50%, -50%) scale(1.2);
 transition: transform var(--transition);
 padding: 24px;
 }
